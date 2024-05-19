@@ -36,7 +36,6 @@
     }
 
     /* EDUCATION TIMELINE */
-
     /* The actual timeline (the vertical ruler) */
     .timeline {
         position: relative;
@@ -49,7 +48,7 @@
         content: '';
         position: absolute;
         width: 6px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         top: 0;
         bottom: 0;
         left: 50%;
@@ -60,7 +59,7 @@
     .container {
         padding: 10px 40px;
         position: relative;
-        /* background-color: inherit; */
+        background-color: inherit;
         width: 50%;
     }
 
@@ -70,9 +69,9 @@
         position: absolute;
         width: 25px;
         height: 25px;
-        right: -17px;
+        right: -13px;
         background-color: white;
-        border: 4px solid #FF9F55;
+        border: 4px solid #42c2c2;
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -118,7 +117,7 @@
 
     /* Fix the circle for containers on the right side */
     .right::after {
-        left: -16px;
+        left: -13px;
     }
 
     /* The actual content */
@@ -176,8 +175,8 @@
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Education</a>
-                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
+                <a href="#education" class="w3-bar-item w3-button">Education</a>
+                <a href="#work" class="w3-bar-item w3-button">Portfolio</a>
                 <!-- <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a> -->
                 <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
             </div>
@@ -196,7 +195,7 @@
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Education</a>
+        <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">Education</a>
         <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
         <!-- <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a> -->
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
@@ -224,8 +223,8 @@
     </header>
 
     <!-- About Section -->
-    <div class="w3-container" style="padding:100px 16px" id="about">
-        <h3 class="w3-center">A LITTLE ABOUT ME</h3>
+    <div class="w3-container " style="padding:60px 16px" id="about">
+        <h3 class="w3-center w3-xxlarge">A Little About Me</h3>
         <!-- <p class="w3-center w3-large">Key features of our company</p> -->
 
         <!-- Center the entire section -->
@@ -234,58 +233,54 @@
             <div class="w3-twothird" style="text-align: center;">
                 <img src="profilepic.png" alt="Profile Picture" class="w3-circle" style="width: 200px; height: 200px;">
                 <!-- <p class="w3-large">Responsive</p> -->
-                <p class="w3-content " style="max-width:700px">Heyo! My name is Hui Yiand I'm an IT student with a
+                <p class="w3-content " style="max-width:700px">Heyo! My name is Hui Yi and I'm an IT student with a
                     passion for front end development and design. I'm currently a third
                     year student at Northen Univeity Malayia pursuing a degree in Information Technology with a major in
                     software engineering. I aspire toward a career that will allow me to channel my creativity through
                     crafting beautiful software and engaging experiences.I wish to have a career in a field where I can
                     use my creativity to create beautiful software and gain new perspectives.<br><br>When I am not
-                    working on the computer, I enjoy photography, swimming, and playing frisbee.
-
+                    working on the computer, I enjoy photography, swimming, and playing frisbee
                 </p>
             </div>
         </div>
     </div>
 
     <!-- Education Section -->
-    <div class="w3-container w3-row w3-center w3-light-grey w3-padding-64">
+    <div class="w3-container w3-row w3-center w3-light-grey w3-padding-64" id="education">
+        <h3 class="w3-center w3-xxlarge" style="padding:0px 16px 50px">Education</h3>
         <div class="timeline" style="position:relative; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
+            <!--university  -->
             <div class="container left">
                 <div class="content">
-                    <!-- <h3>2017</h3>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-                        perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p> -->
                     <div class="w3-content w3-left-align">
                         <h5 class="w3-opacity"><b>Universiti Utara Malaysia (UUM)</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - <span
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw"></i>2022 - <span
                                 class="w3-tag w3-teal w3-round">Ongoing</span></h6>
                         <p>Bachelor of Science with Honours (Information Technology)</p>
                         <p><span class="w3-text-grey">CGPA</span>: 3.89; Dean’s List (Semester 1 - 5)</p>
                     </div>
                 </div>
             </div>
+            <!-- matriculation -->
             <div class="container right">
                 <div class="content">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
+                    <div class="w3-content w3-left-align">
+                        <h5 class="w3-opacity"><b>Kolej Matrikulasi Kedah (KMK)</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw"></i>2020 - 2021</h6>
+                        <p>Account Stream</p>
+                        <p><span class="w3-text-grey">CGPA</span>: 4.0 out of 4.0</p>
+                    </div>
                 </div>
             </div>
+            <!-- high school -->
             <div class="container left">
                 <div class="content">
-                    <h2>2015</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim
-                        fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                        primis ea
-                        eam.</p>
+                    <div class="w3-content w3-left-align">
+                        <h5 class="w3-opacity"><b>SMK Pulau Nyior</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw "></i>2015 - 2019</h6>
+                        <p>Sijil Peperiksaan Malaysia (SPM)</p>
+                        <p><span class="w3-text-grey">Result</span>: SPM 10A</p>
+                    </div>
                 </div>
             </div>
 
