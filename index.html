@@ -6,165 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-        height: 100%;
-        line-height: 1.8;
-    }
-
-    /* Full height image header */
-    .bgimg-1 {
-        background-position: center;
-        background-size: cover;
-        background-image: url("landing.jpg");
-        min-height: 100%;
-    }
-
-    .w3-bar .w3-button {
-        padding: 16px;
-    }
-
-    /* EDUCATION TIMELINE */
-    /* The actual timeline (the vertical ruler) */
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: rgb(255, 255, 255);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-    }
-
-    /* Container around content */
-    .container {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-    }
-
-    /* The circles on the timeline */
-    .container::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -13px;
-        background-color: white;
-        border: 4px solid #42c2c2;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: 0;
-    }
-
-    /* Place the container to the right */
-    .right {
-        left: 50%;
-    }
-
-    /* Add arrows to the left container (pointing right) */
-    .left::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        right: 30px;
-        border: medium solid white;
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent white;
-    }
-
-    /* Add arrows to the right container (pointing left) */
-    .right::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        left: 30px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Fix the circle for containers on the right side */
-    .right::after {
-        left: -13px;
-    }
-
-    /* The actual content */
-    .content {
-
-        padding: 20px 30px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-        color: black;
-    }
-
-    /* Media queries - Responsive timeline on screens less than 600px wide */
-    @media screen and (max-width: 600px) {
-
-        /* Place the timelime to the left */
-        .timeline::after {
-            left: 31px;
-        }
-
-        /* Full-width containers */
-        .container {
-            width: 100%;
-            padding-left: 70px;
-            padding-right: 25px;
-        }
-
-        /* Make sure that all arrows are pointing leftwards */
-        .container::before {
-            left: 60px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }
-
-        /* Make sure all circles are at the same spot */
-        .left::after,
-        .right::after {
-            left: 15px;
-        }
-
-        /* Make all right containers behave like the left ones */
-        .right {
-            left: 0%;
-        }
-    }
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
 <body>
 
@@ -287,22 +130,100 @@
         </div>
     </div>
 
-
-    <!-- Promo Section - "We know design" -->
-    <div class="w3-container" style="padding:128px 16px">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>We know design.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut
-                    labore et dolore.</p>
-                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    <!-- Portfolio Section -->
+    <div class="w3-container   w3-padding-64" id="portfolio">
+        <h3 class="w3-center w3-xxlarge" style="padding:0px 16px 50px">Portfolio</h3>
+        <!-- Images Filter Buttons Section -->
+        <div class="portfolio-container">
+            <!-- filter button -->
+            <!-- <div class="filter_buttons">
+                <button class="active" data-name="all">Show all</button>
+                <button data-name="development">Development</button>
+                <button data-name="design">Design</button>
+                <button data-name="photography">Photography</button>
+            </div> -->
+            <div class="filter_buttons w3-center">
+                <button class="active" data-name="all">Show all</button>
+                <button data-name="development">Development</button>
+                <button data-name="design">Design</button>
+                <button data-name="photography">Photography</button>
             </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700"
-                    height="394">
+
+            <!-- Cards Section -->
+            <!-- <div class="filterable_card">
+                <div class="card" data-name="development">
+                    <img src="assets/images/profilepic.png" alt="img">
+                    <div class="card_body">
+                        <h6 class="card_title">Mobile</h6>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-name="development">
+                    <img src="assets/images/profilepic.png" alt="img">
+                    <div class="card_body">
+                        <h6 class="card_title">Mobile</h6>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="filterable_cards w3-row-padding w3-grayscale" style="margin-top:64px">
+                <!-- card 1 -->
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card" data-name="development">
+                        <img src="assets/images/landing.jpg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Mobile</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <p><button class="w3-button w3-light-grey w3-block">
+                                    View More</button></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card" data-name="development">
+                        <img src="assets/images/landing.jpg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Web</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <p><button class="w3-button w3-light-grey w3-block">
+                                    View More</button></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card" data-name="design">
+                        <img src="assets/images/landing.jpg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                            <h3>design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <p><button class="w3-button w3-light-grey w3-block">
+                                    View More</button></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card" data-name="photography">
+                        <img src="assets/images/landing.jpg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                            <h3>photography</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <p><button class="w3-button w3-light-grey w3-block">
+                                    View More</button></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
+
 
     <!-- Team Section -->
     <div class="w3-container" style="padding:128px 16px" id="team">
@@ -315,7 +236,8 @@
                     <div class="w3-container">
                         <h3>John Doe</h3>
                         <p class="w3-opacity">CEO & Founder</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque
                             elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
                                 Contact</button></p>
@@ -328,7 +250,8 @@
                     <div class="w3-container">
                         <h3>Anja Doe</h3>
                         <p class="w3-opacity">Art Director</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque
                             elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
                                 Contact</button></p>
@@ -341,7 +264,8 @@
                     <div class="w3-container">
                         <h3>Mike Ross</h3>
                         <p class="w3-opacity">Web Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque
                             elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
                                 Contact</button></p>
@@ -354,7 +278,8 @@
                     <div class="w3-container">
                         <h3>Dan Star</h3>
                         <p class="w3-opacity">Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque
                             elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
                                 Contact</button></p>
@@ -363,26 +288,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Promo Section "Statistics" -->
-    <!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-        <div class="w3-quarter">
-            <span class="w3-xxlarge">14+</span>
-            <br>Partners
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge">55+</span>
-            <br>Projects Done
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge">89+</span>
-            <br>Happy Clients
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge">150+</span>
-            <br>Meetings
-        </div>
-    </div> -->
 
     <!-- Work Section -->
     <div class="w3-container" style="padding:128px 16px" id="work">
@@ -464,7 +369,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <!-- Pricing Section
     <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
         <h3>PRICING</h3>
@@ -528,7 +433,9 @@
         <p class="w3-content" style="max-width:700px">
             Lets get in touch. I’m looking for any new
             opportunities, my inbox is always open.
-            Whether you interest to collaborate with me or just want to say hi, I’ll try my best to get back to you!</p>
+            Whether you interest to collaborate with me or just want to say hi, I’ll try my best to get back to
+            you!
+        </p>
         </p>
         <p class="w3-center" style="padding:30px 0px 0px">
             <a href="https://t.me/heyo_huiyi" target="https://t.me/heyo_huiyi"><button class=" w3-button w3-black"
@@ -560,7 +467,8 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+            top</a>
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>

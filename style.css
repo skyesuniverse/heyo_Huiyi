@@ -1,0 +1,227 @@
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("landing.jpg");
+        min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+
+    /* EDUCATION TIMELINE */
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    /* Container around content */
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    /* The circles on the timeline */
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -13px;
+        background-color: white;
+        border: 4px solid #42c2c2;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    /* Place the container to the left */
+    .left {
+        left: 0;
+    }
+
+    /* Place the container to the right */
+    .right {
+        left: 50%;
+    }
+
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+        left: -13px;
+    }
+
+    /* The actual content */
+    .content {
+
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+        color: black;
+    }
+
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+
+        /* Place the timelime to the left */
+        .timeline::after {
+            left: 31px;
+        }
+
+        /* Full-width containers */
+        .container {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+
+        /* Make sure that all arrows are pointing leftwards */
+        .container::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Make sure all circles are at the same spot */
+        .left::after,
+        .right::after {
+            left: 15px;
+        }
+
+        /* Make all right containers behave like the left ones */
+        .right {
+            left: 0%;
+        }
+    }
+
+    /* css for portfolio section */
+    .portfolio-container {
+        position: relative;
+        max-width: 1350px;
+        width: 100%;
+        padding: 0px;
+        margin: 50px auto;
+
+    }
+
+    .filter_buttons {
+        /* display: flex;
+        align-items: center;
+        gap: 10px; */
+    }
+
+    button {
+        border: transparent;
+        border-radius: 10px;
+        outline: none;
+        padding: 12px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        margin: 2px;
+    }
+
+    button.active {
+        background: #42c2c2;
+        color: #fff;
+    }
+
+    .w3-card.hide {
+        display: none;
+    }
+
+    .filterable_cards {
+        /* display: flex;
+        margin-top: 25px; */
+    }
+
+    .card {
+        flex-basis: 150px;
+        background-color: #6d46d1;
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+    .card img {
+        /* width: 100%; */
+        height: 210px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card_body {
+        padding: 15px 20px 20px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .card_text {
+        font-size: 18px;
+        color: #333;
+    }
