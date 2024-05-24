@@ -19,7 +19,7 @@
     .bgimg-1 {
         background-position: center;
         background-size: cover;
-        background-image: url("landing.jpg");
+        background-image: url("images/landing.jpg");
         min-height: 100%;
     }
 
@@ -204,4 +204,20 @@
             width: 33.33%;
             /* Adjust this value for larger screens */
         }
+    }
+
+    .logo-container {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .filterDiv {
+        float: left;
+        background-color: #2196F3;
+        color: #ffffff;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 2px;
+        /* display: none; */
     }
