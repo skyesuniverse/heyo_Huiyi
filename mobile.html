@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Heyo@HuiYi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #787474;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+</head>
+
+<body class="w3-white">
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-black">Mobile App Development</h2>
+        <hr class="w3-black" style="width:800px; color: black;background-color:redblack; ">
+        <br>
+
+        <div class=" w3-container w3-white w3-round w3-margin"><br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="images/event/5.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                    <img src="images/event/5.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                    <img src="images/event/5.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+                </div>
+            </div>
+
+            <!-- Container (Portfolio Section) -->
+            <div class="w3-content w3-container w3-padding-64" id="portfolio">
+                <h3 class="w3-center">MY WORK</h3>
+                <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to
+                        make them
+                        bigger</em></p><br>
+
+                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                <div class="w3-row-padding w3-center">
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="The mist over the mountains">
+                    </div>
+
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Coffee beans">
+                    </div>
+
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Bear closeup">
+                    </div>
+
+
+                </div>
+
+                <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="The mist">
+                    </div>
+
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="My beloved typewriter">
+                    </div>
+
+                    <div class="w3-col m3">
+                        <img src="images/event/5.jpg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Empty ghost train">
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
