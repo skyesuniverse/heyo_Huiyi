@@ -163,7 +163,7 @@
         max-width: 1350px;
         width: 100%;
         padding: 0px;
-        margin: 50px auto;
+        margin: 50px 500px;
 
     }
 
@@ -192,6 +192,7 @@
         justify-content: center;
         gap: 20px;
         margin-top: 25px;
+        margin-left: 25px;
     }
 
     .w3-col {
