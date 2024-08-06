@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-
+    <link rel="icon" type="image/png" href="images/HY.png">
     <style>
         body,
         h1,
@@ -48,13 +48,15 @@
             transform: rotate(-90deg);
         }
 
-        .rotate-7 {
-            transform: rotate(45deg);
+        /* Disable image dragging */
+        img {
+            -webkit-user-drag: none;
+            user-drag: none;
         }
     </style>
 </head>
 
-<body class="w3-black">
+<body class="w3-black" oncontextmenu="return false;">
     <!-- Portfolio Section -->
     <div class="w3-padding-64 w3-content" id="photos">
         <h2 class="w3-text-light-grey">Candid Photo</h2>

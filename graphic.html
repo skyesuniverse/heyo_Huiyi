@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-
+    <link rel="icon" type="image/png" href="images/HY.png">
     <style>
         body,
         h1,
@@ -42,10 +42,28 @@
                 margin-left: 0
             }
         }
+
+        /* Disable image dragging */
+        img {
+            -webkit-user-drag: none;
+            user-drag: none;
+        }
+
+        .text-button {
+            color: #f44336;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 10px;
+            /* Adjust this value as needed */
+        }
+
+        .text-button:hover {
+            color: #d32f2f;
+        }
     </style>
 </head>
 
-<body class="w3-white">
+<body class="w3-white" oncontextmenu="return false;">
     <!-- Portfolio Section -->
     <div class="w3-padding-64 w3-content" id="photos">
         <div class="w3-container" style="margin-top:80px" id="showcase">
@@ -64,27 +82,28 @@
 
         <div class=" w3-container w3-white w3-round " style="margin-top:50px">
             <h3><span class="w3-tag w3-red">Social Media Post</span></h3><br>
-            <h3>GOT Programme (Creative Media Workstream)</h3><br>
+            <h3>GOT Programme (Creative Media Workstream)
+                <a href="SM_PosterDesign.pdf" class="text-button" target="_blank">View More</a>
+            </h3><br>
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-row-padding w3-center" style="margin:0 -16px">
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m1.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m1.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m1.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m2.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m2.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m2.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m3.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m3.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m3.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
+
+
 
                 </div>
             </div>
@@ -92,20 +111,17 @@
                 <div class="w3-row-padding w3-center" style="margin:0 -16px">
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m4.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m4.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m4.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m5.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m5.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m5.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m6.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m6.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m6.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
 
@@ -115,20 +131,17 @@
                 <div class="w3-row-padding w3-center" style="margin:0 -16px">
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m7.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m7.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m7.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m8.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m8.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m8.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
                     <div class="w3-col s4">
                         <a href="images/graphic/sm_post/m9.png" data-fancybox="gallery"><img
-                                src="images/graphic/sm_post/m9.png" style="width:100%" class="w3-hover-opacity"
-                                >
+                                src="images/graphic/sm_post/m9.png" style="width:100%" class="w3-hover-opacity">
                         </a>
                     </div>
 
@@ -149,26 +162,22 @@
                     <div class="w3-row-padding w3-center" style="margin:0 -16px">
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g1.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g1.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g1.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g2.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g2.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g2.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g3.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g3.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g3.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g4.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g4.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g4.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                     </div>
@@ -180,20 +189,17 @@
                     <div class="w3-row-padding w3-center" style="margin:0 -16px">
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g5.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g5.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g5.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g6.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g6.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g6.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g7.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g7.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g7.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
 
@@ -206,20 +212,17 @@
                     <div class="w3-row-padding w3-center" style="margin:0 -16px">
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g8.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g8.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g8.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g9.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g9.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g9.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g10.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g10.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g10.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
 
@@ -232,20 +235,17 @@
                     <div class="w3-row-padding w3-center" style="margin:0 -16px">
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g11.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g11.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g11.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g13.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g13.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g13.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                         <div class="w3-col m3">
                             <a href="images/graphic/poster/g12.png" data-fancybox="gallery"><img
-                                    src="images/graphic/poster/g12.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/poster/g12.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
 
@@ -264,15 +264,13 @@
 
                         <div class="w3-col m6 w3-center">
                             <a href="images/graphic/brochure/b1.png" data-fancybox="gallery"><img
-                                    src="images/graphic/brochure/b1.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/brochure/b1.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
 
                         <div class="w3-col m6 w3-center">
                             <a href="images/graphic/brochure/b2.png" data-fancybox="gallery"><img
-                                    src="images/graphic/brochure/b2.png" style="width:100%" class="w3-hover-opacity"
-                                    >
+                                    src="images/graphic/brochure/b2.png" style="width:100%" class="w3-hover-opacity">
                             </a>
                         </div>
                     </div>
